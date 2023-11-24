@@ -1,0 +1,162 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[typescript][javascript][json][html][css][jsonc][markdown][typescriptreact]": {
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma",
+		"editor.formatOnSave": true
+	},
+	"[svelte]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": ["comment", "punctuation.definition.comment"],
+				"settings": {
+					"fontStyle": ""
+				}
+			},
+			{
+				"scope": ["comment", "punctuation.definition.comment"],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"files.associations": {
+		"*.html": "html",
+		".flaskenv": "dotenv",
+		"*.postcss": "postcss",
+		"*.css": "tailwindcss",
+		"*.sql": "postgres",
+		"*.json": "jsonc"
+	},
+	"workbench.startupEditor": "newUntitledFile",
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+	"editor.minimap.enabled": false,
+	"editor.fontFamily": "Cascadia Code, SF Mono, monospace",
+	"editor.fontWeight": "normal",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "GitHub Dark",
+	"editor.linkedEditing": true,
+	"git.confirmSync": false,
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"explorer.confirmDelete": false,
+	"terminal.explorerKind": "external",
+	"editor.suggestSelection": "first",
+	"debug.console.fontSize": 18,
+	"editor.formatOnSaveMode": "file",
+	"editor.formatOnSave": true,
+	"terminal.integrated.fontSize": 16,
+	"yaml.schemas": {
+		"https://json.schemastore.org/github-workflow.json": ".github/workflows/*"
+	},
+	"files.exclude": {
+		"**/__pycache__": true,
+		"**/.pytest_cache": true,
+		"**/**.egg-info": true
+	},
+	"editor.wordWrapColumn": 100,
+	"html.format.indentHandlebars": true,
+	"html.format.templating": true,
+	"workbench.editor.wrapTabs": true,
+	"explorer.confirmDragAndDrop": false,
+	"workbench.colorCustomizations": {
+		"editor.selectionBackground": "#323940",
+		"editor.selectionHighlightBackground": "#323940",
+		"editorCursor.foreground": "#fc9e2a"
+	},
+
+	"editor.minimap.maxColumn": 119,
+	"svelte.enable-ts-plugin": true,
+	"css.lint.unknownAtRules": "ignore",
+	"editor.cursorWidth": 3,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"material-icon-theme.folders.color": "#43a047",
+	"editor.fontSize": 18,
+	"githubPullRequests.pushBranch": "always",
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false,
+		"yaml": true
+	},
+	"githubPullRequests.createOnPublishBranch": "never",
+	"workbench.editor.labelFormat": "short",
+	"explorer.compactFolders": false,
+	"javascript.preferences.quoteStyle": "single",
+	"workbench.view.alwaysShowHeaderActions": true,
+	"[markdown]": {
+		"editor.wordWrapColumn": 100,
+		"editor.unicodeHighlight.ambiguousCharacters": false,
+		"editor.unicodeHighlight.invisibleCharacters": false,
+		"editor.wordWrap": "bounded",
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"svelte.plugin.svelte.compilerWarnings": {
+		"a11y-no-redundant-roles": "ignore"
+	},
+	"editor.lineHeight": 1.4,
+	"typescript.format.semicolons": "remove",
+	"tsimporter.emitSemicolon": false,
+	"prettier.semi": false,
+	"tailwindCSS.experimental.classRegex": [
+		["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+	],
+	"audioCues.volume": 0,
+	"prettier.documentSelectors": ["**/*.svelte"],
+	"svelte.plugin.svelte.format.config.svelteBracketNewLine": false,
+	"prettier.useEditorConfig": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features",
+		"editor.suggest.insertMode": "replace"
+	},
+	"prettier.useTabs": true,
+	"workbench.editor.showTabs": "single",
+	"workbench.tree.indent": 6,
+	"evenBetterToml.formatter.columnWidth": 119,
+	"githubPullRequests.pullBranch": "never",
+	"editor.accessibilitySupport": "off",
+	"editor.insertSpaces": false,
+	"prettier.tabWidth": 4,
+	"advancedNewFile.exclude": {
+		"node_modules": true,
+		".svelte-kit": true
+	},
+	"totalTypeScript.hideAllTips": true,
+	"totalTypeScript.hideBasicTips": true,
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"svelte"
+	],
+	"window.zoomLevel": 1,
+	"editor.wordWrap": "bounded"
+}

@@ -1,0 +1,67 @@
+{
+	"Print to console": {
+		"scope": "javascript,typescript,svelte",
+		"prefix": "clg",
+		"body": ["console.log($0);"],
+		"description": "Log output to console"
+	},
+	"Script tags for TS": {
+		"prefix": "sct",
+		"body": ["<script lang=\"ts\">", "$0", "</script>"]
+	},
+	"SvelteKit Submit Function": {
+		"prefix": "kitSubmit",
+		"body": [
+			"const submit$1: SubmitFunction$0 = () => {",
+			"\treturn async ({ result, update }) => {",
+			"\t\tswitch (result.type) {",
+			"\t\t\tcase 'success':",
+			"\t\t\t\tbreak",
+			"\t\t\tcase 'failure':",
+			"\t\t\t\tbreak",
+			"\t\t\tdefault:",
+			"\t\t\t\tbreak",
+			"\t\t}",
+			"\t\tawait update()",
+			"\t}",
+			"}"
+		],
+		"description": "SvelteKit Submit Function"
+	},
+	"Typescript Generic T extends Record": {
+		"prefix": "trec",
+		"body": ["<T extends Record<PropertyKey, unknown>$1"],
+		"description": "Typescript Generic T extends Record"
+	},
+	"SvelteKit PageData Import": {
+		"prefix": "pd",
+		"body": [
+			"import type { PageData } from './$$types'",
+			"",
+			"export let data: PageData",
+			"$1"
+		]
+	},
+	"Svelte export classname": {
+		"prefix": "cls",
+		"body": [
+			"let className: string | undefined | null = undefined;",
+			"export { className as class }"
+		],
+		"description": "Svelte export classname"
+	},
+	"CN & Classnames": {
+		"prefix": "scn",
+		"body": [
+			"import { cn } from '$$lib/utils'",
+			"let className: string | undefined | null = undefined",
+			"export { className as class }"
+		],
+		"description": "Setup CN & classnames for svelte"
+	},
+	"waitFor": {
+		"prefix": "wf",
+		"body": ["await waitFor(() => expect($1));"],
+		"description": "Wait for expect helper"
+	}
+}
