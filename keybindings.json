@@ -1,0 +1,207 @@
+[
+	/** Panels */
+	{
+		"key": "cmd+k e",
+		"command": "workbench.view.explorer"
+	},
+	{
+		"key": "cmd+k g",
+		"command": "workbench.view.scm"
+	},
+	{
+		"key": "cmd+k d",
+		"command": "workbench.view.debug"
+	},
+	{
+		"key": "cmd+k x",
+		"command": "workbench.extensions.action.showEnabledExtensions"
+	},
+	{
+		"key": "cmd+k b",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "cmd+e",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
+	{
+		"key": "cmd+k a",
+		"command": "workbench.action.toggleActivityBarVisibility"
+	},
+	{
+		"key": "cmd+k p",
+		"command": "workbench.view.extension.github-pull-request"
+	},
+
+	/** File Explorer*/
+	{
+		"key": "cmd+d",
+		"command": "duplicate.execute",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+
+	/** Fold/Unfold*/
+	{
+		"key": "shift+cmd+[",
+		"command": "editor.fold",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+cmd+]",
+		"command": "editor.unfold",
+		"when": "editorTextFocus"
+	},
+
+	/** Line Manipulation */
+	{
+		"key": "cmd+l",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+j",
+		"command": "editor.action.joinLines",
+		"when": "editorTextFocus"
+	},
+
+	/** Emmet*/
+	{
+		"key": "cmd+m i",
+		"command": "editor.emmet.action.balanceIn",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+m o",
+		"command": "editor.emmet.action.balanceOut",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+m w",
+		"command": "editor.emmet.action.wrapWithAbbreviation",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+m m",
+		"command": "editor.emmet.action.matchTag",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+m e",
+		"command": "editor.action.smartSelect.expand",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+m r",
+		"command": "editor.emmet.action.updateTag",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+m backspace",
+		"command": "editor.emmet.action.removeTag",
+		"when": "editorTextFocus"
+	},
+
+	/** New File*/
+	{
+		"key": "cmd+n",
+		"command": "extension.advancedNewFile"
+	},
+
+	/** Terminal */
+	{
+		"key": "cmd+w",
+		"command": "-workbench.action.terminal.killEditor",
+		"when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+	},
+	{
+		"key": "delete",
+		"command": "-workbench.action.terminal.killActiveTab",
+		"when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+	},
+
+	/** Misc */
+	{
+		"key": "cmd+t",
+		"command": "-workbench.action.showAllSymbols"
+	},
+	{
+		"key": "cmd+t",
+		"command": "workbench.action.newWindowTab"
+	},
+	{
+		"key": "ctrl+1",
+		"command": "-workbench.action.openEditorAtIndex1"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.showNextWindowTab"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.showPreviousWindowTab"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"key": "cmd+k r",
+		"command": "editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "f2",
+		"command": "-editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+k r",
+		"command": "-workbench.action.files.revealActiveFileInWindows"
+	},
+	{
+		"key": "cmd+k e",
+		"command": "-workbench.files.action.focusOpenEditorsView",
+		"when": "workbench.explorer.openEditorsView.active"
+	},
+	{
+		"key": "cmd+r",
+		"command": "-workbench.action.reloadWindow",
+		"when": "isDevelopment"
+	},
+	{
+		"key": "cmd+r",
+		"command": "-workbench.action.terminal.runRecentCommand",
+		"when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "cmd+r",
+		"command": "editor.action.startFindReplaceAction",
+		"when": "editorFocus || editorIsOpen"
+	},
+	{
+		"key": "alt+cmd+f",
+		"command": "-editor.action.startFindReplaceAction",
+		"when": "editorFocus || editorIsOpen"
+	},
+	{
+		"key": "shift+cmd+e",
+		"command": "-workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	}
+]

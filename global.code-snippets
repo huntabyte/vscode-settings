@@ -1,4 +1,13 @@
 {
+	"JS comment block": {
+		"scope": "javascript,typescript,svelte",
+		"prefix": "cmt",
+		"body": [
+			"////////////////////////////////////",
+			"// $1",
+			"////////////////////////////////////"
+		]
+	},
 	"Print to console": {
 		"scope": "javascript,typescript,svelte",
 		"prefix": "clg",
@@ -8,6 +17,18 @@
 	"Script tags for TS": {
 		"prefix": "sct",
 		"body": ["<script lang=\"ts\">", "$0", "</script>"]
+	},
+	"Script tags for TS module": {
+		"prefix": "sctm",
+		"body": ["<script lang=\"ts\" context=\"module\">", "$0", "</script>"]
+	},
+	"undefined as unknown as": {
+		"prefix": "uau",
+		"body": ["undefined as unknown as $0"]
+	},
+	"readonlyBox": {
+		"prefix": "robox",
+		"body": ["readonlyBox(() => $0)"]
 	},
 	"SvelteKit Submit Function": {
 		"prefix": "kitSubmit",
@@ -28,19 +49,15 @@
 		],
 		"description": "SvelteKit Submit Function"
 	},
+	"SvelteKit Fail": {
+		"prefix": "kitFail",
+		"body": ["return fail($1, { message: '$2' })"],
+		"description": "Return fail SvelteKit"
+	},
 	"Typescript Generic T extends Record": {
 		"prefix": "trec",
 		"body": ["<T extends Record<PropertyKey, unknown>$1"],
 		"description": "Typescript Generic T extends Record"
-	},
-	"SvelteKit PageData Import": {
-		"prefix": "pd",
-		"body": [
-			"import type { PageData } from './$$types'",
-			"",
-			"export let data: PageData",
-			"$1"
-		]
 	},
 	"Svelte export classname": {
 		"prefix": "cls",
@@ -59,9 +76,38 @@
 		],
 		"description": "Setup CN & classnames for svelte"
 	},
+	"SVG Attrs": {
+		"prefix": "icon",
+		"body": [
+			"<script lang=\"ts\">",
+			"\timport type { SVGAttributes } from 'svelte/elements'",
+			"\ttype $$$Props = SVGAttributes<SVGElement>;",
+			"</script>",
+			"$1"
+		]
+	},
+	"Rest Props": {
+		"prefix": "rp",
+		"body": [
+			"{...$$$restProps}$1"
+		]
+	},
+	"currentColor":{
+		"prefix": "cc",
+		"body": [
+			"currentColor"
+		]
+
+	},
+	"export default":{
+		"prefix": "ed",
+		"body": [
+			"export { default as $1 } from './$2'"
+		]
+	},
 	"waitFor": {
 		"prefix": "wf",
 		"body": ["await waitFor(() => expect($1));"],
-		"description": "Wait for expect helper"
-	}
+		"description": "Wait for expect helper",
+	},
 }
