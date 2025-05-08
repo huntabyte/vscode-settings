@@ -29,12 +29,6 @@
 		"command": "workbench.action.toggleActivityBarVisibility"
 	},
 	{
-		"key": "cmd+k p",
-		"command": "workbench.view.extension.github-pull-request"
-	},
-
-	/** File Explorer*/
-	{
 		"key": "cmd+d",
 		"command": "duplicate.execute",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
@@ -49,18 +43,6 @@
 	{
 		"key": "shift+cmd+]",
 		"command": "editor.unfold",
-		"when": "editorTextFocus"
-	},
-
-	/** Line Manipulation */
-	{
-		"key": "cmd+l",
-		"command": "editor.action.copyLinesDownAction",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "cmd+j",
-		"command": "editor.action.joinLines",
 		"when": "editorTextFocus"
 	},
 
@@ -203,5 +185,89 @@
 		"key": "shift+cmd+e",
 		"command": "-workbench.view.explorer",
 		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "cmd+k p",
+		"command": "-workbench.action.files.copyPathOfActiveFile"
+	},
+	{
+		"key": "cmd+k p",
+		"command": "workbench.view.extension.github-pull-requests"
+	},
+	{
+		"key": "shift+cmd+t",
+		"command": "-workbench.action.reopenClosedEditor"
+	},
+	{
+		"key": "shift+cmd+t",
+		"command": "tailwind-documentation.search"
+	},
+	{
+		"key": "ctrl+cmd+t",
+		"command": "-tailwind-documentation.search"
+	},
+	{
+		"key": "cmd+k c",
+		"command": "workbench.action.chat.openEditSession",
+		"when": "chatEditingParticipantRegistered && chatIsEnabled && !chatViewVisible"
+	},
+	{
+		"key": "shift+cmd+i",
+		"command": "-workbench.action.chat.openEditSession",
+		"when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
+	},
+	{
+		"key": "cmd+k l",
+		"command": "references-view.findReferences",
+		"when": "editorHasReferenceProvider"
+	},
+	{
+		"key": "shift+alt+f12",
+		"command": "-references-view.findReferences",
+		"when": "editorHasReferenceProvider"
+	},
+	// {
+	//     "key": "cmd+k k",
+	//     "command": "aipopup.action.modal.generate",
+	//     "when": "editorFocus && !composerBarIsVisible",
+	//     "args": { "invocationType": "new" }
+	// },
+	{
+		"key": "cmd+k w",
+		"command": "workbench.action.closeEditorsInGroup"
+	},
+	{
+		"key": "cmd+i",
+		"command": "composerMode.agent"
+	},
+	{
+		"key": "shift+cmd+k",
+		"command": "-editor.action.inlineDiffs.focusEditor",
+		"when": "editorHasPromptBar && editorPromptBarFocused"
+	},
+	{
+		"key": "shift+cmd+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+k",
+		"command": "aipopup.action.modal.generate",
+		"when": "editorFocus && !composerBarIsVisible"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-aipopup.action.modal.generate",
+		"when": "editorFocus && !composerBarIsVisible"
+	},
+	{
+		"key": "cmd+t",
+		"command": "-composer.createNewComposerTab",
+		"when": "composerFocused || focusedView =~ /^workbench.panel.aichat.view/"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-cursorai.action.generateInTerminal",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
 	}
 ]
